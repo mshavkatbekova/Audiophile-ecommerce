@@ -1,3 +1,143 @@
 main {
-    flex-grow: 1;
+  flex-grow: 1;
+}
+
+.hero {
+  background-color: $black-three-color;
+}
+
+.hero__container {
+  display: flex;
+  padding-top: 12.8rem;
+  padding-bottom: 15.8rem;
+  background-image: url("../images/hero-image.png");
+  background-repeat: no-repeat;
+  background-position: right 0 top -30px;
+  background-size: contain;
+}
+
+.hero__content {
+  max-width: 396px;
+  width: 100%;
+}
+.hero__overline {
+  color: $white-color;
+  opacity: 0.5;
+  margin-bottom: 2.4rem;
+}
+
+.hero__title {
+  color: $white-color;
+  margin-bottom: 2.4rem;
+}
+.hero__description {
+  margin-bottom: 4rem;
+  opacity: 0.75;
+  color: $white-color;
+}
+
+@media screen and (max-width: 996px) {
+  .hero__container {
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .hero__container {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero__overline {
+    margin-bottom: 1.6rem;
+  }
+
+  .hero__title {
+    font-size: 3.6rem;
+  }
+
+  .hero__description {
+    margin-bottom: 2.8rem;
+  }
+}
+
+.shop__container {
+  padding-top: 200px;
+  padding-bottom: 168px;
+}
+
+.shop__list {
+  display: flex;
+  justify-content: space-between;
+}
+.shop__item {
+  width: 350px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding-bottom: 30px;
+}
+.shop__headphones__img {
+  margin-top: -80px;
+  margin-bottom: 36px;
+}
+.shop__item__speaker {
+  margin-top: -72.5px;
+  margin-bottom: 42.5px;
+}
+.shop__item__earphone {
+  margin-top: -59px;
+  margin-bottom: 49px;
+}
+.shop__headphones__title {
+  margin-bottom: 15px;
+}
+.shop__btn {
+  display: flex;
+  background: 0;
+  border: 0;
+  align-items: center;
+  cursor: pointer;
+}
+.shop__btn span {
+  margin-right: 13px;
+  color: $black-one-color;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 996px) {
+  .shop__item {
+    margin-right: 10px;
+    max-width: 223px;
+    width: 100%;
+    height: 165px;
+  }
+  .shop__headphones__img {
+    max-width: 79px;
+    width: 100%;
+    margin-top: -50px;
+  }
+  .shop__item__speaker {
+    max-width: 84px;
+    width: 100%;
+    margin-top: -50px;
+  }
+  .shop__item__earphone {
+    max-width: 90px;
+    width: 100%;
+    margin-top: -50px;
+  }
+  
+  .shop__headphones__title {
+    font-size: 15px;
+  }
 }

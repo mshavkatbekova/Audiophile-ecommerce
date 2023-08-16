@@ -1,22 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audiophile</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- HEADER START -->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__container container">
+        <button class="header__nav__container">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="site-logo" href="">
+          <img
+            class="site-logo__image"
+            src="./images/audiophile white.svg"
+            alt="audiophile-logo"
+            width="143"
+            height="25"
+          />
+        </a>
+
+        <!-- NAVBAR -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="./headphones.html">HEADPHONES</a> 
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="">SPEAKERS</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="">EARPHONES</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn">
+          <img class="header__btn__image" src="./images/korzinka.svg" alt="" />
+        </button>
+      </div>
+    </header>
     <!-- HEADER END -->
-    
+
     <!-- MAIN START-->
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <p class="hero__overline overline">NEW PRODUCT</p>
+            <h1 class="hero__title">XX99 Mark II Headphones</h1>
+            <p class="hero__description">
+              Experience natural, lifelike audio and exceptional build quality
+              made for the passionate music enthusiast.
+            </p>
+            <a class="hero__btn btn brown-btn" href="">See Product</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="shop__container container">
+          <ul class="shop__list">
+            <li class="shop__item">
+              <img
+                class="shop__headphones__img"
+                src="./images/main-headphone__image.svg"
+                alt="Headphone image"
+              />
+              <span class="shop__headphones__title"> HEADPHONES </span>
+              <a class="shop__btn btn shop__headphones__btn" href="#">
+                <span> shop </span>
+                <img src="./images/arrow-right.svg" alt="" />
+              </a>
+            </li>
+            <li class="shop__item">
+              <img
+                class="shop__item__speaker"
+                src="./images/main-speakers__image.svg"
+                alt="Headphone image"
+              />
+              <span class="shop__headphones__title"> SPEAKERS </span>
+              <a class="shop__btn btn shop__headphones__btn" href="#">
+                <span> shop </span>
+                <img src="./images/arrow-right.svg" alt="" />
+              </a>
+            </li>
+            <li class="shop__item">
+              <img
+                class="shop__item__earphone"
+                src="./images/main-earphones__image.svg"
+                alt="Headphone image"
+              />
+              <span class="shop__headphones__title"> EARPHONES </span>
+              <a class="shop__btn btn shop__headphones__btn" href="#">
+                <span> shop </span>
+                <img src="./images/arrow-right.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <!-- MAIN END-->
 
     <!-- FOOTER START -->
     <footer class="footer"></footer>
     <!-- FOOTER END -->
-</body>
+  </body>
 </html>
